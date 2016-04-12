@@ -8,7 +8,7 @@
     "watch-js": "watchify -t babelify ./src/js/app.js -o ./dist/bundle.js -v",
     "watch-pug": "pug --watch src/pug/ --out ./dist/",
     "watch-stylus": "stylus ./src/styl/ --watch --sourcemap-inline --out ./dist/",
-    "build": "browserify src/js/app.js -t babelify -o ./dist/bundle.js && pug ./src/pug/ -o ./dist/ -p && stylus ./src/styl/ -o ./dist/"
+    "build": "browserify src/js/app.js -t babelify -o ./dist/bundle.js & pug ./src/pug/ -o ./dist/ -P & stylus ./src/styl/ -o ./dist/"
   },
   "author": "",
   "license": "ISC",
